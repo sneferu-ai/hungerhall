@@ -1,6 +1,7 @@
 <div align="center">
 
-# HUNGERHALL
+
+<img width="553" height="124" alt="image" src="https://github.com/user-attachments/assets/54a0e9bd-6971-45d1-a75c-dbd9da5d10cd" />
 
 **One building. One diet. Twenty-four floors.**
 
@@ -8,19 +9,17 @@
 
 A single-player, top-down 2D arcade dungeon crawl in which your health bar is the only clock. It counts down the whole time, food is finite, and every room makes you choose what to spend it on.
 
+Using Sneferu's Game Studio, this game was the result of a single prompt **"Build me a game like the 80s arcade game Gauntlet"**. This one suprised me, first run, zero crashes. Im sure there are bugs in there somewhere. :)
+
 ![Godot 4.7](https://img.shields.io/badge/Godot-4.7-478CBF?logo=godotengine&logoColor=white)
 ![GDScript](https://img.shields.io/badge/GDScript-vanilla%2C%20no%20addons-478CBF)
 ![Tests](https://img.shields.io/badge/tests-214%2F214%20passing-2ea44f)
 ![Target](https://img.shields.io/badge/target-Steam%20·%20Windows-1b2838?logo=steam&logoColor=white)
 ![Built by Sneferu](https://img.shields.io/badge/built%20by-Sneferu-0f5c4d)
 
-<img src="docs/screenshots/floor1.png" alt="Floor 1 of the Drowned Vaults: the warrior at bottom-left, health 743 and falling, food and enemies on the floor, the exit door at right" width="860">
-
 </div>
 
 ---
-
-**The specification:** [`docs/specification/`](docs/specification/) holds the specification Sneferu built this from, copied word for word from its run record.
 
 ## Watch it play
 
@@ -113,7 +112,8 @@ HUNGERHALL came out of **[Sneferu Studio](https://sneferu.ai)** from a one-line 
 
 ---
 
-**Built by [Sneferu](https://sneferu.ai)**
+
+<img width="299"  alt="image" src="https://github.com/user-attachments/assets/a506bb0d-dd71-45a6-9ce0-9b78229d16d4" />
 
 <sub>README by Claude (Anthropic).</sub>
 
