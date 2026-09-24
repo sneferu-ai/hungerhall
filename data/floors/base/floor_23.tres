@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="FloorData" format=3]
+
+[ext_resource type="Script" path="res://core/floor_data.gd" id="1_xethe"]
+
+[resource]
+script = ExtResource("1_xethe")
+floor_number = 23
+zone = 3
+tiles = PackedStringArray("####################", "#..#..#..##V......V#", "#........##........#", "#...##.......##....#", "#..................#", "#V......V###......##", "####DD########..####", "####DD########..####", "#V......V##V......V#", "#........##........#", "#..##..........##..#", "#................X.#", "##......####......##", "####################")
+exit_pos = Vector2i(17, 11)
+doors = PackedVector2Array(4, 6, 5, 6, 4, 7, 5, 7)
+foods = PackedVector2Array(5, 4, 18, 2, 8, 9, 11, 9, 5, 2, 3, 11, 13, 9, 1, 4, 15, 4, 1, 9, 11, 11, 8, 2, 13, 4, 3, 9, 15, 11, 18, 11)
+keys = PackedVector2Array(7, 1)
+potions = PackedVector2Array(6, 11, 16, 2)
+chests = [{
+"value": 150,
+"x": 15,
+"y": 3
+}, {
+"value": 375,
+"x": 5,
+"y": 10
+}, {
+"value": 750,
+"x": 14,
+"y": 10
+}]
+generators = [{
+"enemy_type": 4,
+"x": 7,
+"y": 2
+}, {
+"enemy_type": 3,
+"x": 17,
+"y": 2
+}, {
+"enemy_type": 4,
+"x": 7,
+"y": 11
+}]
+initial_enemies = [{
+"type": 4,
+"x": 12,
+"y": 4
+}]
+hazards = [{
+"phase": 0,
+"tiles": [Vector2i(13, 11), Vector2i(14, 11), Vector2i(3, 9), Vector2i(4, 9)],
+"trigger": 2,
+"type": 2
+}]
+drain_hp_per_sec = 5.5
+target_seconds = 285
+chest_total = 1275
+generator_hp = 160
+generator_cadence_ticks = 108

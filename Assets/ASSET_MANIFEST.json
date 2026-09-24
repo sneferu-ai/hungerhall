@@ -1,0 +1,480 @@
+{
+  "run_id": "apr-f1b7921a0edd4356",
+  "assets": [
+    {
+      "file": "Assets/warrior-main.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "12cd036944f9272dabcfefb592b47b8e846a5897634d90a0a58799e35e01f2ec",
+      "purpose": "Warrior sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_warrior role, facing S",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/valkyrie-main.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "8c7ee2590d8521460a8ed12a24295e575299ddacdeae1b97171b1822e775d5e5",
+      "purpose": "Valkyrie sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_valkyrie role, facing S",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/wizard-main.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "36dfb6f62a74ed9011c83dcc431c41b6aa8b7f24aea47051abbc9a32c8ba3300",
+      "purpose": "Wizard sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_wizard role, facing S",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/elf-main.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "6b33b63bfe0f8bbe2b1763844b4b73b9a33347f389d631151e5520280fbafac7",
+      "purpose": "Elf sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_elf role, facing S",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/warrior-main_sheet.png",
+      "sha256": "a8877f6fab74d116445530ab545b737c218744acc70bcaf214fae418a455de36",
+      "sprite_sheet": {
+        "frame_width": 32,
+        "frame_height": 32,
+        "count": 6,
+        "layout": "horizontal"
+      },
+      "purpose": "Warrior sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_warrior role, facing S (animation sprite sheet)",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/valkyrie-main_sheet.png",
+      "sha256": "6b2fc9eba5e85befc9a8f1cca8e696561ded0c0ebcdac30f886f0de38edf563b",
+      "sprite_sheet": {
+        "frame_width": 32,
+        "frame_height": 32,
+        "count": 6,
+        "layout": "horizontal"
+      },
+      "purpose": "Valkyrie sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_valkyrie role, facing S (animation sprite sheet)",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/wizard-main_sheet.png",
+      "sha256": "f5bb7202ae34a1ad1937228381a482904b7eeb73ed31d1d8fa435913ce797d10",
+      "sprite_sheet": {
+        "frame_width": 32,
+        "frame_height": 32,
+        "count": 6,
+        "layout": "horizontal"
+      },
+      "purpose": "Wizard sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_wizard role, facing S (animation sprite sheet)",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/elf-main_sheet.png",
+      "sha256": "a45250a5647382582a57b6e00a99794fef6514edced72455fde8725ef6fd23e5",
+      "sprite_sheet": {
+        "frame_width": 32,
+        "frame_height": 32,
+        "count": 6,
+        "layout": "horizontal"
+      },
+      "purpose": "Elf sprite sheet: 1 idle + 2 walk + 2 throw + 1 potion, hero_elf role, facing S (animation sprite sheet)",
+      "category": "player",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still"
+    },
+    {
+      "file": "Assets/ui-hud-icons.png",
+      "width": 48,
+      "height": 16,
+      "sha256": "65b8557720d18a22dcdcf5e3bd9bbab7b629c43137f49e4d6b499c4bf6aca2b6",
+      "purpose": "HUD icon strip: 3 frames (potion flask + skeleton key + food plate), 16×16 each, semantic palette roles — potion = service_amber stopper, key = key_silver tines, food = food_gold plate",
+      "category": "ui",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/hero-flame-overlay.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "eafda3c1bcca67a09fcd595d3a135ac59f60eb937cf34d22d67d04fa38d37239",
+      "purpose": "Hero life-light flame overlay: 3 sub-region frames (6×6 well-fed, 4×4 hungry, 2×2 famished) within 16×16 canvas, service_amber; code selects frame via RegionRect per HP grade — no sprite scaling; positioned at hero head in code; nearest-neighbour filtering",
+      "category": "effect",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-scullion.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "d7040bb11c95356cb4ee4df47f8a582d9ebb054914f9a0d75f6942ca7297cd58",
+      "purpose": "Scullion Wisp drift cycle: 1 idle rag + 3 drift frames, spectral_cyan role, 1px text_bone outline, dishcloth wisp with soapy film trail",
+      "category": "enemy",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-cleaver-brute.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "2822a491ab6dd912238fe5af5ab637b6df1fa69b9338cc9a6611225f9ec3dfed",
+      "purpose": "Cleaver Brute walk cycle: 1 idle + 3 walk frames, wall_cap body with canvas-dark apron plates, 2px canvas outline, butcher's apron and meat cleaver",
+      "category": "enemy",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-broiler.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e8100cbb33f1501e9f4d8fe3b7e0dbd6ffc2ddd97a22aa0a1ff3ebf5d88ca7ce",
+      "purpose": "Broiler walk cycle: 1 idle + 3 walk frames, critical_brick cauldron body with steam vents, 2px canvas outline, boiling cauldron with steam wisps",
+      "category": "enemy",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-porter.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "c59da4dccb5748328746290ea41af210279e4cbff5ef8d05f1a54644711b2eb1",
+      "purpose": "Porter cycle: 1 idle + 2 walk + 1 throw frame, zone_cinder role, 2px canvas outline, hunched server carrying tureen overhead",
+      "category": "enemy",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-maitre-d.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "5cfbb7144c9c68e6ff243606d90ef52ea3085ad47f138651a88091c204a2dba7",
+      "purpose": "Maître d' cycle: 1 idle + 2 drift + 1 cast frame, spectral_cyan role, 2px canvas outline, angular vested diamond with detached serving-gloved hands",
+      "category": "enemy",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-carver.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "91cc607228b814b903e404336f9c22e6eafd1998350b24662fafaac01f5c58e6",
+      "purpose": "Carver boss cycle: 1 idle + 2 advance + 2 cleaver swing + 1 vanish frame, wall_body body role with wall_cap hollow serving-dome head, 2px canvas outline, carving knife",
+      "category": "enemy",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/generator-cloche.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "b4d5050a06acf0b9ac7c22f9f2256fa8dcac917ccd678528fb222c00f008e9ba",
+      "purpose": "Generator cloche: 3 frames (closed idle 2000ms, open spawning 150ms, suppressed 500ms), service_amber crescent on slot, 2px canvas outline, iron serving cloche. Stationary enemy-spawn-system fixture categorized as boundary for Forge routing; visual treatment from hall_fixtures family",
+      "category": "boundary",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/prop-door.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "f0e7a93631e11d344d71d14bcb803a81a51c9ee7cd2540a666efdc90c4ef745a",
+      "purpose": "Door: 2 frames (closed bolted pantry hatch, open passage), wall_body fill, 4×2px service_amber crescent on lintel, fully opaque within tile boundary",
+      "category": "tile",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/prop-exit.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "37aeba783d4ab41b53bd46db740d92c70835e1c6dfd7a38e4931c618e7f492b0",
+      "purpose": "Exit hatch: single frame, spectral_cyan glow rim, 4×2px service_amber crescent on lintel, fully opaque within tile boundary",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-floor-drowned.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "5d1cddb968565a716c8e1d1322800462f2a1b69f5a226013a880d4fd17495152",
+      "purpose": "Drowned Vaults floor: ANCHOR tile, floor_mid base, kitchen tile-floor checkerboard pattern with waterline speckle in outer 6px ring, quiet 20×20 center, zone_drowned accent",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-floor-cinder.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "0c636c1c0692605fd4aafc5102b406c391df38588cdbe4b67fc6429adfd69f82",
+      "purpose": "Cindercrypt floor: same treatment as drowned anchor, scorched butcher-block grain with zone_cinder ember seams in outer ring",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-floor-starved.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "b8ca6c82bc0f999816e7046832bae6df79ed1cdec9f04c034815421c2f878877",
+      "purpose": "Starved Deep floor: same treatment as drowned anchor, bare pantry flagstones with zone_starved void dust in outer ring",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-floor-throne.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "b5caa0c9cbf4fb9b1fad52ff2f267525afb9ffdceaf0d1ac01e0a2d4a7e3acb3",
+      "purpose": "Hollow Throne floor: same treatment as drowned anchor, cracked marble serving counter with zone_throne fracture veins in outer ring",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-wall-drowned.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "f96912b92c98359f34f072523e78acb19f629cec9a469514ce16b6ac74a4065a",
+      "purpose": "Drowned Vaults wall: ANCHOR tile, wall_body fill, wall_cap top strip as grout line, backsplash tile pattern with zone_drowned waterline seepage, no outline",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-wall-cinder.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "a5ec2bde94ee4dbbe938393e81bd7178077760ec3164ac2f10560df822b03469",
+      "purpose": "Cindercrypt wall: same treatment as drowned anchor, charred brick with oven-scorch and zone_cinder ember seams in outer ring",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-wall-starved.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "cdb5eb5299e923ed82f275b4753f61338e5240036a272dea1d53d7f247844147",
+      "purpose": "Starved Deep wall: same treatment as drowned anchor, bare pantry wall stone with shelf-bracket cap and zone_starved void dust in outer ring",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/tile-wall-throne.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "4134e33eea8ea0d7bb1bfe5d6ccdd976beceaa4ac7d30abbfaf69dec7c57fa2e",
+      "purpose": "Hollow Throne wall: same treatment as drowned anchor, cracked marble wainscoting with chair-rail cap and zone_throne fracture veins in outer ring",
+      "category": "tile",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/pickup-food.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "a80f1a1c40508d297b8cc4bc1a6d00c765784002544199f8e5f1d3e583d4e09b",
+      "purpose": "Food pickup: 2-frame visual (idle + raised); code applies 4-frame 2px sine position bob over 500ms independent of sprite frames, food_gold role, 2×2px service_amber crescent-dot on rim, round plate with food_gold filling",
+      "category": "effect",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/pickup-key.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "1154aa37fc117255f8879d9073fed3419e9ea8bcb49fb7f119147c7c9b0a41eb",
+      "purpose": "Key pickup: single frame, key_silver role, skeleton key with bow (4×4px / 2×2 atoms) + shaft (2×8px / 1×4 atoms) + two tine notches (2×2px each at tip), 2×2px service_amber crescent-dot on key bow",
+      "category": "effect",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/pickup-potion.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "504976544f3fffdf74b001757a55c1ef535c091eed87c87e024d3d77235ab832",
+      "purpose": "Potion pickup: single frame, neutral flask (key_silver glass, food_gold liquid base) with cork stopper; the liquid is a separate child Sprite2D class-tinted in code via self_modulate; the 2×2px service_amber crescent-dot on the stopper is a code-drawn overlay so the class tint never contaminates the interactive signal",
+      "category": "effect",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/pickup-treasure.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "eba0845d54a553e8860bf9b22bf91f29e9e83bd7a2bf514a9b72252ab94dc145",
+      "purpose": "Treasure chest: single frame, 2×2px service_amber crescent-dot on lid, food_gold gleam inside",
+      "category": "effect",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/projectile-axe.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "bb6801fd9b6e050217c18fa5c38080732e65c424f7591dc2ca074b4773e14f1d",
+      "purpose": "Warrior cleaver-axe projectile: 4-frame tumble cycle covering 360° at 50ms per frame (200ms full rotation), hero_warrior role",
+      "category": "effect",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/projectile-spear.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "391bc39c45c2a23a62c6cd2dea9135e9a730e56f22edf4bb5104a249535b3366",
+      "purpose": "Valkyrie spear projectile: 2 frames (horizontal + vertical orientation), hero_valkyrie role",
+      "category": "effect",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/projectile-bolt.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "460e3a684539602fa2efe6d18375c2d867e74ac591c569eb01f3e2e36fbb43d9",
+      "purpose": "Wizard bolt projectile: single radial frame, hero_wizard core with spectral_cyan halo",
+      "category": "effect",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/projectile-arrow.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "97c47e5c15dba06b63481ed2b8dc9d351b1f74ab5e8b460f288ae43a42d0a556",
+      "purpose": "Elf carving-arrow projectile: single frame lozenge with trail, hero_elf role",
+      "category": "effect",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/projectile-enemy.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "8dda8ee1826dbbf0a18625fd2d5b94275c4d354118718578c56fee95e52dce72",
+      "purpose": "Enemy projectiles: 2 frames (porter tureen + maître d' bolt), zone_cinder and spectral_cyan roles",
+      "category": "effect",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/particle-spark.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "2020cfe688595ab5910557f077cfebadb4382a4dc253a96cb3079762f5fbf350",
+      "purpose": "Spark particle texture: 64px transparent additive-friendly 4-step luminance radial, service_amber tint, 2×2 pixel granularity blocks",
+      "category": "particle",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/particle-glow.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "9a4e77df90a4fad49b42afa40533cd41ed16c8580233f1ed3560e36b0c0827d3",
+      "purpose": "Glow particle texture: 64px transparent additive-friendly 3-step luminance halo, food_gold tint, 2×2 pixel granularity blocks",
+      "category": "particle",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/particle-smoke.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "e9ec50f269ae407ac15cb0c96a0a9a138ade747f9779897952b24849529b844e",
+      "purpose": "Smoke particle texture: 64px transparent NORMAL-blend 3-step luminance wisp, wall_body base tint; code sets self_modulate to a 70% blend toward the current zone accent at spawn for enemy death smoke (drowned→zone_drowned, cinder→zone_cinder, starved→zone_starved, throne→zone_throne)",
+      "category": "particle",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/particle-trail.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "e019ee2e2b969c0179669daca51ca06bf890e36d35468addca9c6f79de454d5e",
+      "purpose": "Trail particle texture: 64px transparent additive-friendly 4-step luminance elongated streak, multi-tint via code, 2×2 pixel granularity blocks",
+      "category": "particle",
+      "qualification": "product_qualified",
+      "requested_deliverable": "texture",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/hazard-flame-jet.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "4f8287448611f0ee522bddfdf29b4bbdb11345fd066d6a5fbecec332e3bf839e",
+      "purpose": "Oven burner flame jet: 4 frames (dormant hold + telegraph 200ms + active 400ms + fade 200ms), critical_brick on telegraph/active, zone tint on dormant, stove-grate nozzle; if the famished-grade contrast receipt fails per the Accessibility evidence gate, the telegraph flash is rendered on the unmodulated OverlayCanvasLayer",
+      "category": "effect",
+      "qualification": "fallback_unqualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    },
+    {
+      "file": "Assets/enemy-scullion_sheet.png",
+      "sha256": "6516cf467b651c28a2e2a0f52f28fb11479d05a005a06b5f976ae8769bf6bcb3",
+      "sprite_sheet": {
+        "frame_width": 32,
+        "frame_height": 32,
+        "count": 4,
+        "layout": "horizontal"
+      },
+      "purpose": "Scullion Wisp drift cycle: 1 idle rag + 3 drift frames, spectral_cyan role, 1px text_bone outline, dishcloth wisp with soapy film trail (animation sprite sheet)",
+      "category": "enemy",
+      "qualification": "product_qualified",
+      "requested_deliverable": "animation_sheet_plus_still",
+      "baseline_carry": true
+    }
+  ],
+  "shipping_ledger_revision": "apr-f1b7921a0edd4356:b60f4e0509a7fe40"
+}

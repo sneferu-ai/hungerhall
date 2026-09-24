@@ -1,0 +1,45 @@
+{
+  "schema": "hungerhall_announcer_audio_v1",
+  "clips": {
+    "game_start": {
+      "file": "announcer_game_start.wav",
+      "duration_sec": 1.5
+    },
+    "floor_start": {
+      "file": "announcer_floor_start.wav",
+      "duration_sec": 1.2
+    },
+    "floor_clear": {
+      "file": "announcer_floor_clear.wav",
+      "duration_sec": 1.0
+    },
+    "player_hit": {
+      "file": "announcer_player_hit.wav",
+      "duration_sec": 0.5
+    },
+    "player_die": {
+      "file": "announcer_player_die.wav",
+      "duration_sec": 1.5
+    },
+    "continue": {
+      "file": "announcer_continue.wav",
+      "duration_sec": 1.0
+    },
+    "game_over": {
+      "file": "announcer_game_over.wav",
+      "duration_sec": 1.5
+    },
+    "campaign_clear": {
+      "file": "announcer_campaign_clear.wav",
+      "duration_sec": 2.0
+    },
+    "class_select": {
+      "file": "announcer_class_select.wav",
+      "duration_sec": 1.2
+    },
+    "title": {
+      "file": "announcer_title.wav",
+      "duration_sec": 1.0
+    }
+  }
+}

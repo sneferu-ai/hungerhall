@@ -1,0 +1,15 @@
+{
+  "schema": "audio_product_manifest_v1",
+  "game": "HUNGERHALL",
+  "note": "Empty by design: the operator is this game's musician and supplies finished music and sound effects after the playable game exists (POST-BUILD MUSICIAN HANDOFF). The musician cue seam IS shipped in this tree: cues originate in core/rules_session.gd at the real controller/rules sites (_push_cue), surface through RulesSession.consume_pending() (G6 3.3 {cues, events}), are drained by app/screens/play.gd after every fixed 60Hz step, and are dispatched by app/cue_bus.gd (class_name CueBus, child of Main, emitted_log Array[Dictionary] for journey-contract observation). Cue meanings and callsites live in data/cue_manifest.json (hungerhall_cue_manifest_v1). AudioDirector/Announcer/JuiceDirector dispatch slots are replaceable no-op hooks until authored audio arrives. No placeholder or synthesized audio ships in the staged tree, and none is required.",
+  "cue_seam": {
+    "bus": "res://app/cue_bus.gd",
+    "manifest": "res://data/cue_manifest.json",
+    "emitter": "res://core/rules_session.gd",
+    "forwarder": "res://app/screens/play.gd",
+    "authored_audio_status": "awaiting_operator"
+  },
+  "authored_tracks": [],
+  "authored_cues": [],
+  "announcer_clips": []
+}

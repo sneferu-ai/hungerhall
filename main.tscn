@@ -1,0 +1,38 @@
+[gd_scene load_steps=10 format=3 uid="uid://b5a2h7g3m8k1x"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_main"]
+[ext_resource type="Script" path="res://app/input_mapper.gd" id="2_mapper"]
+[ext_resource type="Script" path="res://app/scene_router.gd" id="3_router"]
+[ext_resource type="Script" path="res://app/cue_bus.gd" id="4_cuebus"]
+[ext_resource type="Script" path="res://app/save_store.gd" id="5_savestore"]
+[ext_resource type="Script" path="res://app/profile_store.gd" id="6_profilestore"]
+[ext_resource type="Script" path="res://app/score_store.gd" id="7_scorestore"]
+[ext_resource type="Script" path="res://app/settings_store.gd" id="8_settingsstore"]
+[ext_resource type="Script" path="res://juice/juice_director.gd" id="9_juice"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="InputMapper" type="Node" parent="."]
+script = ExtResource("2_mapper")
+
+[node name="SceneRouter" type="Node" parent="."]
+script = ExtResource("3_router")
+
+[node name="CueBus" type="Node" parent="."]
+script = ExtResource("4_cuebus")
+
+[node name="JuiceDirector" type="Node" parent="."]
+script = ExtResource("9_juice")
+
+[node name="SaveStore" type="Node" parent="."]
+script = ExtResource("5_savestore")
+
+[node name="ProfileStore" type="Node" parent="."]
+script = ExtResource("6_profilestore")
+
+[node name="ScoreStore" type="Node" parent="."]
+script = ExtResource("7_scorestore")
+
+[node name="SettingsStore" type="Node" parent="."]
+script = ExtResource("8_settingsstore")

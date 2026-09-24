@@ -1,0 +1,13 @@
+[gd_resource type="FontFile" load_steps=2 format=3]
+
+[ext_resource type="FontFile" path="res://Fonts/silkscreen_regular.ttf" id="1_base"]
+
+[resource]
+; G4 announcer/caption type — Silkscreen at 24px, monospace ALL-CAPS,
+; white on #000000CC backing per G3. Pixel-perfect flags as font_24.tres.
+fallbacks = Array[Font]([ExtResource("1_base")])
+hinting = 0
+oversampling = 1.0
+multichannel_signed_distance_field = false
+generate_mipmaps = false
+fixed_size = 24

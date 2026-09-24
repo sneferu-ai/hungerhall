@@ -1,0 +1,50 @@
+{
+  "schema": "game_journey_v1",
+  "seed": 42,
+  "entry_wait_frames": 45,
+  "steps": [
+    {
+      "action": "sneferu_primary_action",
+      "hold_frames": 3,
+      "wait_frames": 45,
+      "expect": [
+        {"kind": "node_exists", "path": "/root/Main/SceneRouter/TitleScreen"},
+        {"kind": "node_absent", "path": "/root/Main/SceneRouter/SplashScreen"}
+      ]
+    },
+    {
+      "action": "sneferu_primary_action",
+      "hold_frames": 3,
+      "wait_frames": 45,
+      "expect": [
+        {"kind": "node_exists", "path": "/root/Main/SceneRouter/ClassSelectScreen"},
+        {"kind": "node_absent", "path": "/root/Main/SceneRouter/TitleScreen"}
+      ]
+    },
+    {
+      "action": "sneferu_primary_action",
+      "hold_frames": 3,
+      "wait_frames": 60,
+      "expect": [
+        {"kind": "node_exists", "path": "/root/Main/SceneRouter/PlayScreen"},
+        {"kind": "property_equals", "path": "/root/Main/SceneRouter/PlayScreen", "property": "is_playing", "value": true}
+      ]
+    },
+    {
+      "action": "hh_throw",
+      "hold_frames": 3,
+      "wait_frames": 30,
+      "expect": [
+        {"kind": "property_equals", "path": "/root/Main/SceneRouter/PlayScreen", "property": "is_playing", "value": true},
+        {"kind": "property_equals", "path": "/root/Main/SceneRouter/PlayScreen", "property": "shots_fired", "value": 1}
+      ]
+    }
+  ],
+  "terminal": {
+    "audio_cue_required": false,
+    "expect": [
+      {"kind": "node_exists", "path": "/root/Main/SceneRouter/PlayScreen"},
+      {"kind": "property_equals", "path": "/root/Main/SceneRouter/PlayScreen", "property": "is_playing", "value": true}
+    ]
+  }
+}

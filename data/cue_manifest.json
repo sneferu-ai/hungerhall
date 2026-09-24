@@ -1,0 +1,131 @@
+{
+  "schema": "hungerhall_cue_manifest_v1",
+  "game": "HUNGERHALL",
+  "note": "Musician handoff manifest (POST-BUILD MUSICIAN HANDOFF). Every cue below is emitted from the SAME real controller/rules path used by player actions and terminal outcomes. Emission core: core/rules_session.gd (RulesSession._push_cue at each real semantic site). Transport: RulesSession.consume_pending() (G6 3.3 {cues, events}) drained by app/screens/play.gd after every fixed 60Hz step and forwarded to app/cue_bus.gd (class_name CueBus, child of Main; emitted_log Array[Dictionary] for journey-contract observation). Dispatch slots (audio_director / announcer / juice_director) are compact replaceable no-op hooks until authored audio is supplied. No PCM ships in this tree and none is required.",
+  "transport": {
+    "emitter": "core/rules_session.gd - RulesSession._push_cue() / _push_event()",
+    "surface": "core/rules_session.gd - RulesSession.consume_pending() returns {cues: [{cue_id, step}], events: [{type, step, position, entity_id, amount}]}",
+    "forwarder": "app/screens/play.gd - _forward_pending_cues() after each RulesSession.step()",
+    "bus": "app/cue_bus.gd - CueBus.emit(cue_id, step) / emit_from_pending(pending); emitted_log for observation"
+  },
+  "cues": {
+    "cue.player.throw": {
+      "meaning": "Player fired the class projectile (throw action accepted and a projectile actually spawned; cooldown-gated presses emit nothing)",
+      "callsite": "core/rules_session.gd :: _do_throw()",
+      "event_type": "throw"
+    },
+    "cue.player.potion": {
+      "meaning": "Player consumed one potion stock and the class potion effect activated",
+      "callsite": "core/rules_session.gd :: _do_potion()",
+      "event_type": "potion_used"
+    },
+    "cue.player.hurt": {
+      "meaning": "Player took damage from any source (enemy contact, enemy projectile, or hazard tile; invulnerability-gated hits emit nothing)",
+      "callsite": "core/rules_session.gd :: _check_contact(), _check_enemy_projectile_hits(), _step_hazards()",
+      "event_type": "player_hit"
+    },
+    "cue.player.death": {
+      "meaning": "Player HP reached zero and the death countdown completed; terminal transition into DYING",
+      "callsite": "core/rules_session.gd :: _step_death_check()",
+      "event_type": "death"
+    },
+    "cue.enemy.hurt": {
+      "meaning": "A player projectile damaged an enemy (per hit, including piercing hits)",
+      "callsite": "core/rules_session.gd :: _check_player_projectile_hits()",
+      "event_type": "projectile_hit"
+    },
+    "cue.enemy.killed": {
+      "meaning": "An enemy died (projectile damage, potion AoE, splash, or generator-link death)",
+      "callsite": "core/rules_session.gd :: _on_enemy_killed()",
+      "event_type": "enemy_killed"
+    },
+    "cue.generator.hurt": {
+      "meaning": "A player projectile damaged a spawn generator",
+      "callsite": "core/rules_session.gd :: _check_player_projectile_hits()",
+      "event_type": "projectile_hit"
+    },
+    "cue.generator.destroyed": {
+      "meaning": "A spawn generator was destroyed; its live children die with it",
+      "callsite": "core/rules_session.gd :: _on_generator_destroyed()",
+      "event_type": "generator_destroyed"
+    },
+    "cue.pickup.food": {
+      "meaning": "Player ate food and healed HP (the hall's clock stops bleeding for a moment)",
+      "callsite": "core/rules_session.gd :: _step_pickups()",
+      "event_type": "food_consumed"
+    },
+    "cue.pickup.key": {
+      "meaning": "Player collected a key",
+      "callsite": "core/rules_session.gd :: _step_pickups()",
+      "event_type": "key_collected"
+    },
+    "cue.pickup.potion": {
+      "meaning": "Player collected a potion bottle (cap-3 inventory)",
+      "callsite": "core/rules_session.gd :: _step_pickups()",
+      "event_type": "potion_collected"
+    },
+    "cue.pickup.chest": {
+      "meaning": "Player opened a chest and scored its value",
+      "callsite": "core/rules_session.gd :: _step_pickups()",
+      "event_type": "chest_opened"
+    },
+    "cue.door.open": {
+      "meaning": "A locked door consumed one key and opened under the player",
+      "callsite": "core/rules_session.gd :: _step_pickups()",
+      "event_type": "door_opened"
+    },
+    "cue.floor.clear": {
+      "meaning": "Exit-door overlap held 3 consecutive frames on a floor below 24; terminal transition into FLOOR_RESULTS",
+      "callsite": "core/rules_session.gd :: _step_win_check()",
+      "event_type": "floor_clear"
+    },
+    "cue.campaign.clear": {
+      "meaning": "Floor 24 cleared; terminal transition into CAMPAIGN_RESULTS",
+      "callsite": "core/rules_session.gd :: _step_win_check()",
+      "event_type": "campaign_clear"
+    },
+    "cue.continue.offered": {
+      "meaning": "Crumble animation finished; the continue offer opens (ring timer starts)",
+      "callsite": "core/rules_session.gd :: _step_dying()",
+      "event_type": null
+    },
+    "cue.continue.accepted": {
+      "meaning": "Continue accepted with tokens remaining; floor rebuilds from spawn",
+      "callsite": "core/rules_session.gd :: decide_continue(true)",
+      "event_type": null
+    },
+    "cue.continue.refused": {
+      "meaning": "Continue declined, or accepted with zero tokens; terminal transition into GAME_OVER",
+      "callsite": "core/rules_session.gd :: decide_continue(false) / decide_continue(true) with no tokens",
+      "event_type": null
+    },
+    "cue.continue.expired": {
+      "meaning": "Continue ring timed out with no decision; terminal transition into GAME_OVER",
+      "callsite": "core/rules_session.gd :: _step_continue_offer()",
+      "event_type": null
+    },
+    "cue.hp.tick": {
+      "meaning": "Hunger drain clock dealt integer HP damage (the heartbeat \u2014 fires on every integer decrement, not just lethal hits; juice-presentation cue for the drain pulse visual, no dedicated audio required)",
+      "callsite": "core/rules_session.gd :: _step_drain()",
+      "event_type": null
+    },
+    "cue.projectile.impact": {
+      "meaning": "Any projectile struck a valid target (enemy, generator, or player \u2014 fires alongside cue.enemy.hurt / cue.generator.hurt / cue.player.hurt; juice-presentation cue for the impact flash visual, no dedicated audio required)",
+      "callsite": "core/rules_session.gd :: _check_player_projectile_hits(), _check_enemy_projectile_hits()",
+      "event_type": null
+    },
+    "cue.hazard.flame_preon": {
+      "meaning": "Flame-jet entered its fixed pre-ON warning window (flame_jet_preon_ticks before the damage phase). Presentation telegraph only — the damage window is unchanged; drives the G9 AC-39 pre-ON flicker.",
+      "callsite": "core/rules_session.gd :: _step_hazards()",
+      "event_type": null
+    },
+    "cue.enemy.telegraph": {
+      "meaning": "Ranged enemy committed to a shot (demon/lobber/sorcerer fire). G9 §9 row 8 frames this as a ranged windup; the G2-locked rules have no windup state, so the cue fires at the fire moment — the only ranged-intent seam the locked runtime exposes (documented supersession, PROTOTYPE_BRIEF §6). Drives the G9 AC-37 telegraph modulate; sibling presentation event enemy_telegraph carries the entity id.",
+      "callsite": "core/rules_session.gd :: _enemy_fire()",
+      "event_type": "enemy_telegraph"
+    }
+    },
+  "reserved_event_types_not_emitted_in_this_slice": [
+    "zone_entry"
+  ]
+}

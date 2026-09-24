@@ -1,0 +1,21 @@
+HungerhallPixel — original pixel font (SUBSTITUTE; see IMPLEMENTATION_NOTES.md)
+================================================================================
+
+Copyright 2026 Sneferu Pipeline (Safe AI and Robot Learning Lab).
+
+The glyph artwork in silkscreen_regular.ttf and silkscreen_bold.ttf is
+ORIGINAL, generated at build time by tools/build_fonts.py (shipped in this
+tree; a 5x7 monospace pixel grid composed programmatically, family name
+"HungerhallPixel", honest provenance). These files are NOT the real
+Silkscreen typeface by Jason Kottke. They carry the pinned G4 paths so the
+real Silkscreen (SIL OFL 1.1) can be dropped in over them later with zero
+code changes — every consumer loads res://Fonts/silkscreen_regular.ttf and
+res://Fonts/silkscreen_bold.ttf, and the sized resources font_8/16/24/32.tres
++ announcer_font.tres bind them through fallbacks.
+
+Until that drop-in happens, this original face stands in under the same
+license terms, and the substitution is declared as a Known Blocker in
+IMPLEMENTATION_NOTES.md at the tree root.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Full license text: https://openfontlicense.org

@@ -1,0 +1,51 @@
+{
+  "schema": "save_schema_v1_reference",
+  "note": "Documentation-only field reference (G6 §2 pin). NOT loaded at runtime — core/save_codec.gd is the authoritative schema. All files live under user:// and are written atomically (temp file + rename).",
+  "campaign_save": {
+    "path": "user://save_campaign.json",
+    "fields": {
+      "save_version": "int — current 1; unrecognized version triggers fresh start with notification",
+      "floor": "int — NEXT uncompleted floor (1..24); the only save point is floor_results entry",
+      "class": "String — warrior|valkyrie|wizard|elf",
+      "score": "int — cumulative total at last floor_results entry, including death penalties",
+      "potions_remaining": "int — 0..3, as the last floor ended",
+      "ng_plus": "bool — LAR-1 field; always false in this build (DIS-8: NG+ OUT)",
+      "timestamp": "int — unix seconds at save write"
+    },
+    "invariants": [
+      "Written in exactly ONE place: entry into floor_results. No mid-floor save can ever exist.",
+      "class_select lock-in begins a new campaign in memory only; the old save survives until the first floor_results entry of the new run atomically replaces it.",
+      "Tokens are never persisted: the only save point is floor_results entry where tokens are always 2."
+    ]
+  },
+  "profile": {
+    "path": "user://save_profile.json",
+    "fields": {
+      "profile_version": "int — current 1",
+      "ng_plus_unlocked": "bool — always false in this build (DIS-8)",
+      "classes_cleared": "Array[String] — appended at campaign_results entry only; drives class-select laurels"
+    }
+  },
+  "scores": {
+    "path": "user://save_scores.json",
+    "fields": {
+      "scores_version": "int — current 1",
+      "standard": "Dictionary[String -> Array] — per-class local guestbook, max 10 entries each, {initials, score, floor, timestamp}"
+    }
+  },
+  "settings": {
+    "path": "user://save_settings.json",
+    "fields": {
+      "settings_version": "int — current 1",
+      "sfx_vol": "int 0..100",
+      "music_vol": "int 0..100",
+      "captions": "bool",
+      "caption_size": "int — 24 or 32 (px at 1080p; G3 floor 24px)",
+      "reduced_motion": "bool — G5: dying crumble 1.2s -> 0.2s, no crossfades",
+      "rumble_intensity": "int 0..100 — LAR-2 event-driven patterns scale by this",
+      "auto_fire": "bool — hold-to-throw fires at base rate (G5 decision 14)",
+      "fullscreen": "bool",
+      "bindings": "Dictionary[String -> Dictionary] — per-action physical key/button overrides for remap_capture"
+    }
+  }
+}

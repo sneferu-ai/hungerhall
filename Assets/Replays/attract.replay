@@ -1,0 +1,97 @@
+{
+  "actions": [
+    {
+      "event": {
+        "dx": 1.0,
+        "dy": 0.0,
+        "type": "move"
+      },
+      "tick": 0
+    },
+    {
+      "event": {
+        "type": "throw"
+      },
+      "tick": 60
+    },
+    {
+      "event": {
+        "type": "throw"
+      },
+      "tick": 110
+    },
+    {
+      "event": {
+        "dx": 0.0,
+        "dy": 1.0,
+        "type": "move"
+      },
+      "tick": 218
+    },
+    {
+      "event": {
+        "type": "throw"
+      },
+      "tick": 234
+    },
+    {
+      "event": {
+        "type": "throw"
+      },
+      "tick": 284
+    },
+    {
+      "event": {
+        "type": "throw"
+      },
+      "tick": 334
+    },
+    {
+      "event": {
+        "dx": 0.707107543945312,
+        "dy": 0.707106113433838,
+        "type": "move"
+      },
+      "tick": 346
+    },
+    {
+      "event": {
+        "dx": 0.707107603549957,
+        "dy": 0.707105994224548,
+        "type": "move"
+      },
+      "tick": 347
+    }
+  ],
+  "baked_by": "tools/attract_capture.gd",
+  "class": "warrior",
+  "floor": 1,
+  "frame_count": 9,
+  "game": "HUNGERHALL",
+  "length_ticks": 348,
+  "outcome": "floor_clear",
+  "playback_rate": 30,
+  "receipt_sha256": "f5981978e07ce2a188d5d0f592d8cdfc01af61cd2bcb316b5dc1912a0311a9db",
+  "schema": "hungerhall_replay_v1",
+  "seed": 57005,
+  "solver_gate": {
+    "band": 1,
+    "class_hp": 800,
+    "combat_estimate": 500,
+    "completable": true,
+    "drain_per_sec": 2.0,
+    "drain_plus_combat": 770,
+    "drain_total": 270,
+    "effective_hp_budget": 1198,
+    "floor": 1,
+    "food_heal_total": 450,
+    "food_hp": 150,
+    "food_pieces": 3,
+    "hp_surplus": 428.0,
+    "margin_hp": 52,
+    "meets_floor": true,
+    "target_seconds": 135,
+    "total_ok": true
+  },
+  "tick_rate": 60
+}

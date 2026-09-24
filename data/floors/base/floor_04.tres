@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="FloorData" format=3]
+
+[ext_resource type="Script" path="res://core/floor_data.gd" id="1_m31pe"]
+
+[resource]
+script = ExtResource("1_m31pe")
+floor_number = 4
+tiles = PackedStringArray("####################", "##.......##........#", "#........##........#", "#..####......#..#..#", "#..................#", "#.......####......##", "####..########..####", "####..########..####", "#..#..#..##........#", "#........##........#", "#...##.......##....#", "#................X.#", "#........###......##", "####################")
+exit_pos = Vector2i(17, 11)
+doors = PackedVector2Array()
+foods = PackedVector2Array(3, 2, 15, 2, 5, 9, 11, 11, 1, 2)
+keys = PackedVector2Array()
+potions = PackedVector2Array(6, 11)
+chests = [{
+"value": 100,
+"x": 15,
+"y": 10
+}, {
+"value": 250,
+"x": 4,
+"y": 4
+}]
+generators = [{
+"enemy_type": 0,
+"x": 7,
+"y": 2
+}, {
+"enemy_type": 1,
+"x": 17,
+"y": 2
+}]
+initial_enemies = [{
+"type": 0,
+"x": 12,
+"y": 4
+}]
+drain_hp_per_sec = 2.5
+target_seconds = 165
+chest_total = 350

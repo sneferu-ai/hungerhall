@@ -1,0 +1,16 @@
+[gd_resource type="FontFile" load_steps=2 format=3]
+
+[ext_resource type="FontFile" path="res://Fonts/silkscreen_regular.ttf" id="1_base"]
+
+[resource]
+; G4 type scale — one resource per integer size, never non-integer scaled.
+; Pixel-perfect flags: the AA/hinting/subpixel half of the G4 contract lives
+; on the TTF import side (silkscreen_regular.ttf.import: antialiasing=0,
+; hinting=0, subpixel_positioning=0, oversampling=1.0) — Godot 4.7 FontFile
+; exposes no antialiased/disable_subpixel_positioning properties (probed).
+fallbacks = Array[Font]([ExtResource("1_base")])
+hinting = 0
+oversampling = 1.0
+multichannel_signed_distance_field = false
+generate_mipmaps = false
+fixed_size = 8

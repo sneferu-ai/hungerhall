@@ -1,0 +1,58 @@
+{
+  "schema": "presentation_contract_v1",
+  "game": "HUNGERHALL",
+  "dimension": {
+    "viewport_width": 640,
+    "viewport_height": 360,
+    "window_width": 1280,
+    "window_height": 720,
+    "tile_size": 32,
+    "floor_grid_w": 20,
+    "floor_grid_h": 14
+  },
+  "camera": {
+    "kind": "dead_zone_follow",
+    "dead_zone_x": 48,
+    "dead_zone_y": 32,
+    "lead_px": 16,
+    "trauma_kick_px": 2
+  },
+  "readability_bar": {
+    "region": "bottom",
+    "height_fraction": 0.12,
+    "purpose": "caption band + 8px canvas strip; HUD numerals top strip",
+    "min_contrast": 4.5
+  },
+  "frame_floors": {
+    "near_black_max_fraction": 0.02,
+    "near_uniform_max_fraction": 0.985,
+    "min_channel_spread": 0.02,
+    "letterbox_max_fraction": 0.05
+  },
+  "palette": {
+    "canvas": "#0B0A13",
+    "floor_mid": "#252039",
+    "wall_body": "#191526",
+    "wall_cap": "#5A4E76",
+    "text_bone": "#F3EAD9",
+    "ui_slate": "#16111F",
+    "service_amber": "#F2A23B",
+    "critical_brick": "#D94836",
+    "food_gold": "#EFC258",
+    "key_silver": "#D9DEE2",
+    "spectral_cyan": "#79D6C9",
+    "hero_warrior": "#C87040",
+    "hero_valkyrie": "#5090B0",
+    "hero_wizard": "#9060B0",
+    "hero_elf": "#50B070",
+    "zone_drowned": "#3C7C8B",
+    "zone_cinder": "#C25828",
+    "zone_starved": "#4A5490",
+    "zone_throne": "#8169AE"
+  },
+  "ui_regions": [
+    {"name": "hud_top_strip", "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.12},
+    {"name": "hud_bottom_left", "x": 0.0, "y": 0.76, "w": 0.22, "h": 0.12},
+    {"name": "caption_band", "x": 0.1, "y": 0.88, "w": 0.8, "h": 0.1}
+  ]
+}

@@ -1,0 +1,3642 @@
+{
+  "schema": "game_tunables_v1",
+  "constants": {
+    "drain_band_1": {
+      "value": 2.0,
+      "band": [
+        1.5,
+        3.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain",
+        "floor_1_3"
+      ]
+    },
+    "drain_band_2": {
+      "value": 2.5,
+      "band": [
+        2.0,
+        3.5
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain",
+        "floor_4_6"
+      ]
+    },
+    "drain_band_3": {
+      "value": 3.0,
+      "band": [
+        2.5,
+        4.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain",
+        "floor_7_9"
+      ]
+    },
+    "drain_band_4": {
+      "value": 3.5,
+      "band": [
+        3.0,
+        4.5
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain",
+        "floor_10_12"
+      ]
+    },
+    "drain_band_5": {
+      "value": 4.0,
+      "band": [
+        3.5,
+        5.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain"
+      ]
+    },
+    "drain_band_6": {
+      "value": 4.5,
+      "band": [
+        4.0,
+        5.5
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain"
+      ]
+    },
+    "drain_band_7": {
+      "value": 5.0,
+      "band": [
+        4.5,
+        6.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain"
+      ]
+    },
+    "drain_band_8": {
+      "value": 5.5,
+      "band": [
+        5.0,
+        6.5
+      ],
+      "step": 0.1,
+      "affects": [
+        "player_drain"
+      ]
+    },
+    "target_seconds_band_1": {
+      "value": 135,
+      "band": [
+        120,
+        150
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_2": {
+      "value": 165,
+      "band": [
+        150,
+        180
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_3": {
+      "value": 195,
+      "band": [
+        180,
+        210
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_4": {
+      "value": 225,
+      "band": [
+        210,
+        240
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_5": {
+      "value": 255,
+      "band": [
+        240,
+        270
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_6": {
+      "value": 255,
+      "band": [
+        240,
+        270
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_7": {
+      "value": 285,
+      "band": [
+        270,
+        300
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "target_seconds_band_8": {
+      "value": 285,
+      "band": [
+        270,
+        300
+      ],
+      "step": 5,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "food_hp": {
+      "value": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "player_heal"
+      ]
+    },
+    "combat_damage_estimate_band_1": {
+      "value": 500,
+      "band": [
+        500,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_2": {
+      "value": 700,
+      "band": [
+        700,
+        700
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_3": {
+      "value": 700,
+      "band": [
+        700,
+        700
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_4": {
+      "value": 850,
+      "band": [
+        850,
+        850
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_5": {
+      "value": 950,
+      "band": [
+        950,
+        950
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_6": {
+      "value": 1100,
+      "band": [
+        1100,
+        1100
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_7": {
+      "value": 1100,
+      "band": [
+        1100,
+        1100
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "combat_damage_estimate_band_8": {
+      "value": 1250,
+      "band": [
+        1250,
+        1250
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "margin_hp": {
+      "value": 52,
+      "band": [
+        26,
+        104
+      ],
+      "step": 2,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "min_class_hp": {
+      "value": 520,
+      "band": [
+        400,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "solver_budget"
+      ]
+    },
+    "warrior_hp": {
+      "value": 800,
+      "band": [
+        600,
+        1000
+      ],
+      "step": 20,
+      "affects": [
+        "class_warrior"
+      ]
+    },
+    "valkyrie_hp": {
+      "value": 680,
+      "band": [
+        500,
+        850
+      ],
+      "step": 20,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "wizard_hp": {
+      "value": 520,
+      "band": [
+        400,
+        650
+      ],
+      "step": 20,
+      "affects": [
+        "class_wizard"
+      ]
+    },
+    "elf_hp": {
+      "value": 560,
+      "band": [
+        440,
+        700
+      ],
+      "step": 20,
+      "affects": [
+        "class_elf"
+      ]
+    },
+    "warrior_speed": {
+      "value": 128,
+      "band": [
+        96,
+        160
+      ],
+      "step": 8,
+      "affects": [
+        "class_warrior"
+      ]
+    },
+    "valkyrie_speed": {
+      "value": 152,
+      "band": [
+        120,
+        184
+      ],
+      "step": 8,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "wizard_speed": {
+      "value": 144,
+      "band": [
+        112,
+        176
+      ],
+      "step": 8,
+      "affects": [
+        "class_wizard"
+      ]
+    },
+    "elf_speed": {
+      "value": 192,
+      "band": [
+        160,
+        224
+      ],
+      "step": 8,
+      "affects": [
+        "class_elf"
+      ]
+    },
+    "warrior_shot_dmg": {
+      "value": 50,
+      "band": [
+        30,
+        70
+      ],
+      "step": 5,
+      "affects": [
+        "class_warrior"
+      ]
+    },
+    "valkyrie_shot_dmg": {
+      "value": 30,
+      "band": [
+        20,
+        45
+      ],
+      "step": 5,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "wizard_shot_dmg": {
+      "value": 20,
+      "band": [
+        15,
+        30
+      ],
+      "step": 5,
+      "affects": [
+        "class_wizard"
+      ]
+    },
+    "elf_shot_dmg": {
+      "value": 15,
+      "band": [
+        10,
+        25
+      ],
+      "step": 5,
+      "affects": [
+        "class_elf"
+      ]
+    },
+    "warrior_shot_range_tiles": {
+      "value": 5,
+      "band": [
+        3,
+        8
+      ],
+      "step": 1,
+      "affects": [
+        "class_warrior"
+      ]
+    },
+    "valkyrie_shot_range_tiles": {
+      "value": 7,
+      "band": [
+        5,
+        10
+      ],
+      "step": 1,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "wizard_shot_range_tiles": {
+      "value": 6,
+      "band": [
+        4,
+        9
+      ],
+      "step": 1,
+      "affects": [
+        "class_wizard"
+      ]
+    },
+    "elf_shot_range_tiles": {
+      "value": 10,
+      "band": [
+        7,
+        14
+      ],
+      "step": 1,
+      "affects": [
+        "class_elf"
+      ]
+    },
+    "warrior_shot_rate": {
+      "value": 1.2,
+      "band": [
+        0.8,
+        2.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "class_warrior"
+      ]
+    },
+    "valkyrie_shot_rate": {
+      "value": 1.6,
+      "band": [
+        1.0,
+        2.4
+      ],
+      "step": 0.1,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "wizard_shot_rate": {
+      "value": 1.2,
+      "band": [
+        0.8,
+        2.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "class_wizard"
+      ]
+    },
+    "elf_shot_rate": {
+      "value": 3.0,
+      "band": [
+        2.0,
+        4.0
+      ],
+      "step": 0.1,
+      "affects": [
+        "class_elf"
+      ]
+    },
+    "wizard_splash_dmg": {
+      "value": 12,
+      "band": [
+        8,
+        20
+      ],
+      "step": 1,
+      "affects": [
+        "class_wizard"
+      ]
+    },
+    "projectile_speed": {
+      "value": 320,
+      "band": [
+        240,
+        400
+      ],
+      "step": 20,
+      "affects": [
+        "projectiles"
+      ]
+    },
+    "enemy_projectile_speed": {
+      "value": 210,
+      "band": [
+        160,
+        260
+      ],
+      "step": 10,
+      "affects": [
+        "enemy_projectiles"
+      ]
+    },
+    "lobber_projectile_speed": {
+      "value": 220,
+      "band": [
+        180,
+        260
+      ],
+      "step": 10,
+      "affects": [
+        "enemy_projectiles"
+      ]
+    },
+    "demon_projectile_speed": {
+      "value": 200,
+      "band": [
+        160,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "enemy_projectiles"
+      ]
+    },
+    "demon_projectile_dmg": {
+      "value": 15,
+      "band": [
+        10,
+        25
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_projectiles"
+      ]
+    },
+    "lobber_projectile_dmg": {
+      "value": 20,
+      "band": [
+        15,
+        30
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_projectiles"
+      ]
+    },
+    "contact_dmg_ghost": {
+      "value": 10,
+      "band": [
+        5,
+        20
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "contact_dmg_grunt": {
+      "value": 15,
+      "band": [
+        10,
+        25
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "contact_dmg_demon": {
+      "value": 20,
+      "band": [
+        15,
+        30
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "contact_dmg_lobber": {
+      "value": 15,
+      "band": [
+        10,
+        25
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "contact_dmg_sorcerer": {
+      "value": 20,
+      "band": [
+        15,
+        30
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "contact_dmg_death": {
+      "value": 50,
+      "band": [
+        30,
+        80
+      ],
+      "step": 5,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "contact_tick_ticks": {
+      "value": 30,
+      "band": [
+        20,
+        40
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_contact"
+      ]
+    },
+    "enemy_hp_ghost": {
+      "value": 14,
+      "band": [
+        10,
+        20
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_ghost"
+      ]
+    },
+    "enemy_hp_grunt": {
+      "value": 30,
+      "band": [
+        20,
+        45
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_grunt"
+      ]
+    },
+    "enemy_hp_demon": {
+      "value": 60,
+      "band": [
+        40,
+        90
+      ],
+      "step": 2,
+      "affects": [
+        "enemy_demon"
+      ]
+    },
+    "enemy_hp_lobber": {
+      "value": 50,
+      "band": [
+        35,
+        75
+      ],
+      "step": 2,
+      "affects": [
+        "enemy_lobber"
+      ]
+    },
+    "enemy_hp_sorcerer": {
+      "value": 80,
+      "band": [
+        60,
+        120
+      ],
+      "step": 2,
+      "affects": [
+        "enemy_sorcerer"
+      ]
+    },
+    "enemy_hp_death": {
+      "value": 300,
+      "band": [
+        200,
+        450
+      ],
+      "step": 10,
+      "affects": [
+        "enemy_death"
+      ]
+    },
+    "enemy_speed_ghost": {
+      "value": 100,
+      "band": [
+        80,
+        120
+      ],
+      "step": 4,
+      "affects": [
+        "enemy_ghost"
+      ]
+    },
+    "enemy_speed_grunt": {
+      "value": 80,
+      "band": [
+        64,
+        96
+      ],
+      "step": 4,
+      "affects": [
+        "enemy_grunt"
+      ]
+    },
+    "enemy_speed_demon": {
+      "value": 90,
+      "band": [
+        72,
+        108
+      ],
+      "step": 4,
+      "affects": [
+        "enemy_demon"
+      ]
+    },
+    "enemy_speed_lobber": {
+      "value": 70,
+      "band": [
+        56,
+        84
+      ],
+      "step": 4,
+      "affects": [
+        "enemy_lobber"
+      ]
+    },
+    "enemy_speed_sorcerer": {
+      "value": 110,
+      "band": [
+        88,
+        132
+      ],
+      "step": 4,
+      "affects": [
+        "enemy_sorcerer"
+      ]
+    },
+    "enemy_speed_death": {
+      "value": 60,
+      "band": [
+        48,
+        72
+      ],
+      "step": 4,
+      "affects": [
+        "enemy_death"
+      ]
+    },
+    "gen_hp_drowned": {
+      "value": 60,
+      "band": [
+        40,
+        90
+      ],
+      "step": 5,
+      "affects": [
+        "generator_drowned"
+      ]
+    },
+    "gen_hp_cinder": {
+      "value": 90,
+      "band": [
+        60,
+        120
+      ],
+      "step": 5,
+      "affects": [
+        "generator_cinder"
+      ]
+    },
+    "gen_hp_starved": {
+      "value": 120,
+      "band": [
+        80,
+        160
+      ],
+      "step": 5,
+      "affects": [
+        "generator_starved"
+      ]
+    },
+    "gen_hp_throne": {
+      "value": 160,
+      "band": [
+        120,
+        200
+      ],
+      "step": 5,
+      "affects": [
+        "generator_throne"
+      ]
+    },
+    "gen_cadence_drowned": {
+      "value": 180,
+      "band": [
+        90,
+        240
+      ],
+      "step": 6,
+      "affects": [
+        "generator_drowned"
+      ]
+    },
+    "gen_cadence_cinder": {
+      "value": 150,
+      "band": [
+        90,
+        210
+      ],
+      "step": 6,
+      "affects": [
+        "generator_cinder"
+      ]
+    },
+    "gen_cadence_starved": {
+      "value": 120,
+      "band": [
+        90,
+        180
+      ],
+      "step": 6,
+      "affects": [
+        "generator_starved"
+      ]
+    },
+    "gen_cadence_throne_early": {
+      "value": 108,
+      "band": [
+        90,
+        150
+      ],
+      "step": 6,
+      "affects": [
+        "generator_throne"
+      ]
+    },
+    "gen_cadence_throne_late": {
+      "value": 90,
+      "band": [
+        90,
+        120
+      ],
+      "step": 6,
+      "affects": [
+        "generator_throne"
+      ]
+    },
+    "gen_max_alive_per_generator": {
+      "value": 6,
+      "band": [
+        4,
+        8
+      ],
+      "step": 1,
+      "affects": [
+        "generator_cap"
+      ]
+    },
+    "gen_max_alive_per_floor": {
+      "value": 28,
+      "band": [
+        20,
+        36
+      ],
+      "step": 1,
+      "affects": [
+        "generator_cap"
+      ]
+    },
+    "potion_cap": {
+      "value": 3,
+      "band": [
+        2,
+        5
+      ],
+      "step": 1,
+      "affects": [
+        "player_potion"
+      ]
+    },
+    "potion_whirlwind_dmg": {
+      "value": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "potion_warrior"
+      ]
+    },
+    "potion_whirlwind_radius_tiles": {
+      "value": 4,
+      "band": [
+        3,
+        6
+      ],
+      "step": 1,
+      "affects": [
+        "potion_warrior"
+      ]
+    },
+    "potion_whirlwind_knockback_px": {
+      "value": 8,
+      "band": [
+        4,
+        16
+      ],
+      "step": 1,
+      "affects": [
+        "potion_warrior"
+      ]
+    },
+    "potion_aegis_duration_ticks": {
+      "value": 180,
+      "band": [
+        120,
+        300
+      ],
+      "step": 6,
+      "affects": [
+        "potion_valkyrie"
+      ]
+    },
+    "potion_nova_dmg": {
+      "value": 250,
+      "band": [
+        180,
+        350
+      ],
+      "step": 10,
+      "affects": [
+        "potion_wizard"
+      ]
+    },
+    "potion_nova_radius_tiles": {
+      "value": 5,
+      "band": [
+        4,
+        7
+      ],
+      "step": 1,
+      "affects": [
+        "potion_wizard"
+      ]
+    },
+    "potion_nova_gen_dmg": {
+      "value": 125,
+      "band": [
+        90,
+        160
+      ],
+      "step": 5,
+      "affects": [
+        "potion_wizard"
+      ]
+    },
+    "potion_volley_count": {
+      "value": 12,
+      "band": [
+        8,
+        16
+      ],
+      "step": 1,
+      "affects": [
+        "potion_elf"
+      ]
+    },
+    "potion_volley_dmg": {
+      "value": 15,
+      "band": [
+        10,
+        25
+      ],
+      "step": 1,
+      "affects": [
+        "potion_elf"
+      ]
+    },
+    "potion_volley_range_tiles": {
+      "value": 10,
+      "band": [
+        7,
+        14
+      ],
+      "step": 1,
+      "affects": [
+        "potion_elf"
+      ]
+    },
+    "potion_freeze_ticks": {
+      "value": 6,
+      "band": [
+        4,
+        10
+      ],
+      "step": 1,
+      "affects": [
+        "potion_all"
+      ]
+    },
+    "continue_tokens_per_floor": {
+      "value": 2,
+      "band": [
+        1,
+        3
+      ],
+      "step": 1,
+      "affects": [
+        "continue"
+      ]
+    },
+    "continue_hp_fraction": {
+      "value": 0.5,
+      "band": [
+        0.25,
+        0.75
+      ],
+      "step": 0.05,
+      "affects": [
+        "continue"
+      ]
+    },
+    "continue_timer_ticks": {
+      "value": 600,
+      "band": [
+        360,
+        900
+      ],
+      "step": 30,
+      "affects": [
+        "continue"
+      ]
+    },
+    "continue_zero_hold_ticks": {
+      "value": 120,
+      "band": [
+        60,
+        180
+      ],
+      "step": 6,
+      "affects": [
+        "continue"
+      ]
+    },
+    "death_penalty_fraction": {
+      "value": 0.2,
+      "band": [
+        0.1,
+        0.3
+      ],
+      "step": 0.05,
+      "affects": [
+        "score"
+      ]
+    },
+    "death_countdown_ticks": {
+      "value": 24,
+      "band": [
+        12,
+        48
+      ],
+      "step": 2,
+      "affects": [
+        "dying"
+      ]
+    },
+    "dying_crumble_ticks": {
+      "value": 72,
+      "band": [
+        36,
+        144
+      ],
+      "step": 6,
+      "affects": [
+        "dying"
+      ]
+    },
+    "dying_crumble_ticks_reduced": {
+      "value": 12,
+      "band": [
+        6,
+        24
+      ],
+      "step": 2,
+      "affects": [
+        "dying"
+      ]
+    },
+    "splash_total_ticks": {
+      "value": 72,
+      "band": [
+        48,
+        120
+      ],
+      "step": 6,
+      "affects": [
+        "splash"
+      ]
+    },
+    "splash_skippable_after_ticks": {
+      "value": 18,
+      "band": [
+        12,
+        36
+      ],
+      "step": 3,
+      "affects": [
+        "splash"
+      ]
+    },
+    "exit_overlap_required_frames": {
+      "value": 3,
+      "band": [
+        2,
+        5
+      ],
+      "step": 1,
+      "affects": [
+        "floor_clear"
+      ]
+    },
+    "score_ghost_kill": {
+      "value": 10,
+      "band": [
+        5,
+        20
+      ],
+      "step": 1,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_grunt_kill": {
+      "value": 25,
+      "band": [
+        15,
+        40
+      ],
+      "step": 1,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_demon_kill": {
+      "value": 40,
+      "band": [
+        25,
+        60
+      ],
+      "step": 2,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_lobber_kill": {
+      "value": 50,
+      "band": [
+        30,
+        75
+      ],
+      "step": 2,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_sorcerer_kill": {
+      "value": 60,
+      "band": [
+        40,
+        90
+      ],
+      "step": 2,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_death_kill": {
+      "value": 200,
+      "band": [
+        120,
+        300
+      ],
+      "step": 10,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_generator_destroyed": {
+      "value": 100,
+      "band": [
+        60,
+        150
+      ],
+      "step": 5,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_floor_clear": {
+      "value": 500,
+      "band": [
+        300,
+        750
+      ],
+      "step": 25,
+      "affects": [
+        "score"
+      ]
+    },
+    "score_campaign_clear": {
+      "value": 2000,
+      "band": [
+        1200,
+        3000
+      ],
+      "step": 100,
+      "affects": [
+        "score"
+      ]
+    },
+    "chest_value_low": {
+      "value": 100,
+      "band": [
+        50,
+        150
+      ],
+      "step": 10,
+      "affects": [
+        "score"
+      ]
+    },
+    "chest_value_mid": {
+      "value": 250,
+      "band": [
+        150,
+        350
+      ],
+      "step": 10,
+      "affects": [
+        "score"
+      ]
+    },
+    "chest_value_high": {
+      "value": 500,
+      "band": [
+        300,
+        750
+      ],
+      "step": 25,
+      "affects": [
+        "score"
+      ]
+    },
+    "tile_size_px": {
+      "value": 32,
+      "band": [
+        16,
+        64
+      ],
+      "step": 8,
+      "affects": [
+        "rendering"
+      ]
+    },
+    "floor_grid_w": {
+      "value": 20,
+      "band": [
+        16,
+        28
+      ],
+      "step": 2,
+      "affects": [
+        "floor_layout"
+      ]
+    },
+    "floor_grid_h": {
+      "value": 14,
+      "band": [
+        12,
+        20
+      ],
+      "step": 1,
+      "affects": [
+        "floor_layout"
+      ]
+    },
+    "corridor_min_width_tiles": {
+      "value": 2,
+      "band": [
+        2,
+        3
+      ],
+      "step": 1,
+      "affects": [
+        "solver"
+      ]
+    },
+    "valkyrie_reduce_angle_deg": {
+      "value": 30.0,
+      "band": [
+        20.0,
+        45.0
+      ],
+      "step": 5.0,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "valkyrie_reduce_fraction": {
+      "value": 0.5,
+      "band": [
+        0.25,
+        0.75
+      ],
+      "step": 0.05,
+      "affects": [
+        "class_valkyrie"
+      ]
+    },
+    "sorcerer_blink_hp_threshold": {
+      "value": 40,
+      "band": [
+        20,
+        60
+      ],
+      "step": 5,
+      "affects": [
+        "enemy_sorcerer"
+      ]
+    },
+    "sorcerer_blink_cooldown_ticks": {
+      "value": 300,
+      "band": [
+        180,
+        420
+      ],
+      "step": 30,
+      "affects": [
+        "enemy_sorcerer"
+      ]
+    },
+    "sorcerer_blink_no_los_ticks": {
+      "value": 120,
+      "band": [
+        60,
+        180
+      ],
+      "step": 6,
+      "affects": [
+        "enemy_sorcerer"
+      ]
+    },
+    "sorcerer_blink_range_tiles": {
+      "value": 6,
+      "band": [
+        4,
+        8
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_sorcerer"
+      ]
+    },
+    "demon_maintain_distance_tiles": {
+      "value": 4,
+      "band": [
+        3,
+        6
+      ],
+      "step": 1,
+      "affects": [
+        "enemy_demon"
+      ]
+    },
+    "demon_fire_cadence_ticks": {
+      "value": 120,
+      "band": [
+        90,
+        180
+      ],
+      "step": 6,
+      "affects": [
+        "enemy_demon"
+      ]
+    },
+    "lobber_fire_cadence_ticks": {
+      "value": 150,
+      "band": [
+        90,
+        210
+      ],
+      "step": 6,
+      "affects": [
+        "enemy_lobber"
+      ]
+    },
+    "flame_jet_on_ticks": {
+      "value": 60,
+      "band": [
+        30,
+        90
+      ],
+      "step": 6,
+      "affects": [
+        "hazard_flame"
+      ]
+    },
+    "flame_jet_off_ticks": {
+      "value": 120,
+      "band": [
+        90,
+        180
+      ],
+      "step": 6,
+      "affects": [
+        "hazard_flame"
+      ]
+    },
+    "flame_jet_dmg": {
+      "value": 10,
+      "band": [
+        5,
+        20
+      ],
+      "step": 1,
+      "affects": [
+        "hazard_flame"
+      ]
+    },
+    "void_bridge_walkable_ticks": {
+      "value": 90,
+      "band": [
+        60,
+        120
+      ],
+      "step": 6,
+      "affects": [
+        "hazard_void"
+      ]
+    },
+    "void_bridge_void_ticks": {
+      "value": 90,
+      "band": [
+        60,
+        120
+      ],
+      "step": 6,
+      "affects": [
+        "hazard_void"
+      ]
+    },
+    "void_bridge_dmg": {
+      "value": 100,
+      "band": [
+        50,
+        150
+      ],
+      "step": 10,
+      "affects": [
+        "hazard_void"
+      ]
+    },
+    "collapsing_void_remove_after_ticks": {
+      "value": 120,
+      "band": [
+        60,
+        180
+      ],
+      "step": 6,
+      "affects": [
+        "hazard_void"
+      ]
+    },
+    "collapsing_void_dmg": {
+      "value": 100,
+      "band": [
+        50,
+        150
+      ],
+      "step": 10,
+      "affects": [
+        "hazard_void"
+      ]
+    },
+    "attract_replay_hz": {
+      "value": 30,
+      "band": [
+        30,
+        60
+      ],
+      "step": 6,
+      "affects": [
+        "attract"
+      ]
+    },
+    "dead_board_threshold_fraction": {
+      "value": 0.05,
+      "band": [
+        0.02,
+        0.1
+      ],
+      "step": 0.01,
+      "affects": [
+        "balance"
+      ]
+    },
+    "min_class_win_rate": {
+      "value": 0.4,
+      "band": [
+        0.3,
+        0.55
+      ],
+      "step": 0.01,
+      "affects": [
+        "balance"
+      ]
+    },
+    "min_class_avg_hp_at_exit": {
+      "value": 30,
+      "band": [
+        20,
+        60
+      ],
+      "step": 5,
+      "affects": [
+        "balance"
+      ]
+    },
+    "juice.hp.drain_pulse_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        80,
+        140
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.drain_pulse_scale": {
+      "value": 1.08,
+      "default": 1.08,
+      "band": [
+        1.06,
+        1.12
+      ],
+      "step": 0.02,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color_50_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.label_50_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color_25_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.label_25_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color_10_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.label_10_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.food_pop_ms": {
+      "value": 180,
+      "default": 180,
+      "band": [
+        90,
+        360
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.food_pop_scale": {
+      "value": 1.15,
+      "default": 1.15,
+      "band": [
+        1.05,
+        1.3
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.food_tint_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.vignette_ms": {
+      "value": 1200,
+      "default": 1200,
+      "band": [
+        600,
+        2400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.vignette_alpha": {
+      "value": 0.18,
+      "default": 0.18,
+      "band": [
+        0.1,
+        0.3
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.vignette_crit_ms": {
+      "value": 600,
+      "default": 600,
+      "band": [
+        300,
+        1200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.vignette_crit_alpha": {
+      "value": 0.3,
+      "default": 0.3,
+      "band": [
+        0.15,
+        0.45
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac20c.period_50": {
+      "value": 1200,
+      "default": 1200,
+      "band": [
+        800,
+        1600
+      ],
+      "step": 100,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac20c.period_25": {
+      "value": 600,
+      "default": 600,
+      "band": [
+        400,
+        800
+      ],
+      "step": 50,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac20c.period_10": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        200,
+        400
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac20c.scale_amp": {
+      "value": 1.04,
+      "default": 1.04,
+      "band": [
+        1.02,
+        1.06
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.score.pop_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.score.pop_scale": {
+      "value": 1.1,
+      "default": 1.1,
+      "band": [
+        1.05,
+        1.2
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floater.ms": {
+      "value": 400,
+      "default": 400,
+      "band": [
+        200,
+        800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hud.floor_pop_ms": {
+      "value": 180,
+      "default": 180,
+      "band": [
+        90,
+        360
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hud.key_pop_ms": {
+      "value": 180,
+      "default": 180,
+      "band": [
+        90,
+        360
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.continue.pulse_ms": {
+      "value": 1200,
+      "default": 1200,
+      "band": [
+        600,
+        2400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.caption.in_ms": {
+      "value": 160,
+      "default": 160,
+      "band": [
+        80,
+        320
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.caption.dwell_ms": {
+      "value": 1400,
+      "default": 1400,
+      "band": [
+        700,
+        2800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.caption.out_ms": {
+      "value": 180,
+      "default": 180,
+      "band": [
+        90,
+        360
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.spawn_ms": {
+      "value": 220,
+      "default": 220,
+      "band": [
+        110,
+        440
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.swing_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.lunge_ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.lunge_px": {
+      "value": 2,
+      "default": 2,
+      "band": [
+        1,
+        4
+      ],
+      "step": 0.5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.hurt_modulate_ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.hurt_pop_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.hurt_pop_scale": {
+      "value": 1.12,
+      "default": 1.12,
+      "band": [
+        1.05,
+        1.25
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.hurt_edge_flash_ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hero.hurt_edge_alpha": {
+      "value": 0.15,
+      "default": 0.15,
+      "band": [
+        0.08,
+        0.3
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.hit_flash_ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.knockback_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.knockback_px": {
+      "value": 3,
+      "default": 3,
+      "band": [
+        1,
+        6
+      ],
+      "step": 0.5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.death_scale_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.death_fade_ms": {
+      "value": 160,
+      "default": 160,
+      "band": [
+        80,
+        320
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.death_fade_delay_ms": {
+      "value": 40,
+      "default": 40,
+      "band": [
+        0,
+        80
+      ],
+      "step": 5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.telegraph_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.enemy.spawn_ms": {
+      "value": 160,
+      "default": 160,
+      "band": [
+        80,
+        320
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hazard.flicker_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.acflame.entry_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.acflame.entry_alpha": {
+      "value": 0.7,
+      "default": 0.7,
+      "band": [
+        0.5,
+        0.8
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.acflame.loop_period_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        150,
+        300
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.acflame.loop_low": {
+      "value": 0.5,
+      "default": 0.5,
+      "band": [
+        0.4,
+        0.6
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.acflame.loop_high": {
+      "value": 0.7,
+      "default": 0.7,
+      "band": [
+        0.6,
+        0.8
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.acflame.exit_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.projectile.spawn_ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.projectile.impact_ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.generator.idle_ms": {
+      "value": 1400,
+      "default": 1400,
+      "band": [
+        700,
+        2800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.generator.preflicker_ms": {
+      "value": 50,
+      "default": 50,
+      "band": [
+        25,
+        100
+      ],
+      "step": 5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.gen.burst_scale_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.gen.burst_fade_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.camera.gen_zoom_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.camera.gen_zoom": {
+      "value": 1.03,
+      "default": 1.03,
+      "band": [
+        1.01,
+        1.06
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.camera.clear_drift_ms": {
+      "value": 600,
+      "default": 600,
+      "band": [
+        400,
+        800
+      ],
+      "step": 50,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.camera.clear_return_ms": {
+      "value": 400,
+      "default": 400,
+      "band": [
+        300,
+        500
+      ],
+      "step": 50,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.camera.clear_zoom": {
+      "value": 1.02,
+      "default": 1.02,
+      "band": [
+        1.01,
+        1.05
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.door.open_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.exit.idle_ms": {
+      "value": 900,
+      "default": 900,
+      "band": [
+        450,
+        1800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.pickup.bob_ms": {
+      "value": 1000,
+      "default": 1000,
+      "band": [
+        500,
+        2000
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.food.pop_scale_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.food.pop_fade_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.key.pickup_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.treasure.pickup_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.pickup_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.cooldown_ms": {
+      "value": 1000,
+      "default": 1000,
+      "band": [
+        500,
+        2000
+      ],
+      "step": 100,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.flash_ms": {
+      "value": 120,
+      "default": 120,
+      "band": [
+        60,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.flash_alpha": {
+      "value": 0.85,
+      "default": 0.85,
+      "band": [
+        0.4,
+        1.0
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.bloom_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.bloom_alpha": {
+      "value": 0.6,
+      "default": 0.6,
+      "band": [
+        0.3,
+        0.8
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.potion.hero_pop_ms": {
+      "value": 120,
+      "default": 120,
+      "band": [
+        60,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac52.on_ms": {
+      "value": 900,
+      "default": 900,
+      "band": [
+        600,
+        1200
+      ],
+      "step": 100,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac52.off_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        200,
+        400
+      ],
+      "step": 50,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac52.alpha_peak": {
+      "value": 0.25,
+      "default": 0.25,
+      "band": [
+        0.15,
+        0.35
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ac52.cycles": {
+      "value": 3,
+      "default": 3,
+      "band": [
+        2,
+        4
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floor.darken_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floor.darken_alpha": {
+      "value": 0.45,
+      "default": 0.45,
+      "band": [
+        0.25,
+        0.6
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floor.banner_in_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floor.banner_hold_ms": {
+      "value": 600,
+      "default": 600,
+      "band": [
+        300,
+        1200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floor.banner_out_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.floor.dropin_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.death.vignette_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.death.vignette_alpha": {
+      "value": 0.4,
+      "default": 0.4,
+      "band": [
+        0.2,
+        0.6
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.death.collapse_ms": {
+      "value": 350,
+      "default": 350,
+      "band": [
+        175,
+        700
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.results.panel_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.results.countup_ms": {
+      "value": 350,
+      "default": 350,
+      "band": [
+        175,
+        700
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.results.best_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.results.best_flash_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.results.best_flash_alpha": {
+      "value": 0.25,
+      "default": 0.25,
+      "band": [
+        0.125,
+        0.4
+      ],
+      "step": 0.025,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.gameover.entry_ms": {
+      "value": 500,
+      "default": 500,
+      "band": [
+        250,
+        1000
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.sig5.border_fade_ms": {
+      "value": 400,
+      "default": 400,
+      "band": [
+        200,
+        800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.sig5.border_scale_ms": {
+      "value": 400,
+      "default": 400,
+      "band": [
+        200,
+        800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hitstop.light_frames": {
+      "value": 2,
+      "default": 2,
+      "band": [
+        1,
+        4
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hitstop.gen_frames": {
+      "value": 4,
+      "default": 4,
+      "band": [
+        2,
+        8
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hitstop.potion_frames": {
+      "value": 6,
+      "default": 6,
+      "band": [
+        2,
+        10
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hitstop.clear_frames": {
+      "value": 4,
+      "default": 4,
+      "band": [
+        2,
+        8
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.gen.magnitude_px": {
+      "value": 2,
+      "default": 2,
+      "band": [
+        1,
+        3
+      ],
+      "step": 0.5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.gen.mag_px": {
+      "value": 2,
+      "default": 2,
+      "band": [
+        1,
+        3
+      ],
+      "step": 0.5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.gen.ms": {
+      "value": 80,
+      "default": 80,
+      "band": [
+        50,
+        160
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.death.mag_px": {
+      "value": 3,
+      "default": 3,
+      "band": [
+        1,
+        4
+      ],
+      "step": 0.5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.death.magnitude_px": {
+      "value": 3,
+      "default": 3,
+      "band": [
+        1,
+        4
+      ],
+      "step": 0.5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.death.ms": {
+      "value": 120,
+      "default": 120,
+      "band": [
+        60,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.clear.mag_px": {
+      "value": 1,
+      "default": 1,
+      "band": [
+        0.5,
+        2
+      ],
+      "step": 0.25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.clear.magnitude_px": {
+      "value": 1,
+      "default": 1,
+      "band": [
+        0.5,
+        2
+      ],
+      "step": 0.25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.shake.clear.ms": {
+      "value": 60,
+      "default": 60,
+      "band": [
+        30,
+        120
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.light.weak": {
+      "value": 0.2,
+      "default": 0.2,
+      "band": [
+        0.1,
+        0.3
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.light.strong": {
+      "value": 0.0,
+      "default": 0.0,
+      "band": [
+        0.0,
+        0.0
+      ],
+      "step": 0.0,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.light.duration_ms": {
+      "value": 50,
+      "default": 50,
+      "band": [
+        30,
+        80
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.medium.weak": {
+      "value": 0.3,
+      "default": 0.3,
+      "band": [
+        0.2,
+        0.4
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.medium.strong": {
+      "value": 0.3,
+      "default": 0.3,
+      "band": [
+        0.2,
+        0.4
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.medium.duration_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        60,
+        150
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.heavy.weak": {
+      "value": 0.5,
+      "default": 0.5,
+      "band": [
+        0.3,
+        0.6
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.heavy.strong": {
+      "value": 0.6,
+      "default": 0.6,
+      "band": [
+        0.4,
+        0.8
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.heavy.duration_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        300
+      ],
+      "step": 20,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.hit.throttle_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 50,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.haptic.duration_conversion": {
+      "value": 0.001,
+      "default": 0.001,
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.particles.global_cap": {
+      "value": 160,
+      "default": 160,
+      "band": [
+        120,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.tween.cap": {
+      "value": 48,
+      "default": 48,
+      "band": [
+        40,
+        60
+      ],
+      "step": 2,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.tween.critical_subcap": {
+      "value": 23,
+      "default": 23,
+      "band": [
+        20,
+        28
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.ambient.cap": {
+      "value": 16,
+      "default": 16,
+      "band": [
+        12,
+        20
+      ],
+      "step": 2,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.streak.window_ms": {
+      "value": 1500,
+      "default": 1500,
+      "band": [
+        1000,
+        2000
+      ],
+      "step": 100,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.streak.scale_mult_per_tier": {
+      "value": 0.05,
+      "default": 0.05,
+      "band": [
+        0.03,
+        0.08
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.streak.max_tiers": {
+      "value": 3,
+      "default": 3,
+      "band": [
+        2,
+        4
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.boot.splash_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.title.settle_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.attract.veil_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.attract.veil_alpha": {
+      "value": 0.35,
+      "default": 0.35,
+      "band": [
+        0.2,
+        0.5
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.title.prompt_ms": {
+      "value": 1100,
+      "default": 1100,
+      "band": [
+        550,
+        2200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.title.portrait_ms": {
+      "value": 2000,
+      "default": 2000,
+      "band": [
+        1000,
+        4000
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.title.portrait_amp": {
+      "value": 1.03,
+      "default": 1.03,
+      "band": [
+        1.01,
+        1.06
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.menu.hover_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.menu.hover_scale": {
+      "value": 1.05,
+      "default": 1.05,
+      "band": [
+        1.02,
+        1.1
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.menu.press_ms": {
+      "value": 120,
+      "default": 120,
+      "band": [
+        60,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.popin_ms": {
+      "value": 200,
+      "default": 200,
+      "band": [
+        100,
+        400
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.popin_stagger_ms": {
+      "value": 60,
+      "default": 60,
+      "band": [
+        30,
+        120
+      ],
+      "step": 5,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.focus_ms": {
+      "value": 120,
+      "default": 120,
+      "band": [
+        60,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.focus_scale": {
+      "value": 1.06,
+      "default": 1.06,
+      "band": [
+        1.02,
+        1.12
+      ],
+      "step": 0.01,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.confirm_ms": {
+      "value": 220,
+      "default": 220,
+      "band": [
+        110,
+        440
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.glint_ms": {
+      "value": 100,
+      "default": 100,
+      "band": [
+        50,
+        200
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.modal.open_ms": {
+      "value": 160,
+      "default": 160,
+      "band": [
+        80,
+        320
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.modal.close_ms": {
+      "value": 120,
+      "default": 120,
+      "band": [
+        60,
+        240
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.pause.dim_ms": {
+      "value": 150,
+      "default": 150,
+      "band": [
+        100,
+        200
+      ],
+      "step": 25,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.pause.dim_alpha": {
+      "value": 0.6,
+      "default": 0.6,
+      "band": [
+        0.3,
+        0.8
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.splash_title_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.title_class_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.class_play_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.play_results_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.results_play_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.play_gameover_ms": {
+      "value": 400,
+      "default": 400,
+      "band": [
+        200,
+        800
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.gameover_continue_ms": {
+      "value": 250,
+      "default": 250,
+      "band": [
+        125,
+        500
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.transition.continue_title_ms": {
+      "value": 300,
+      "default": 300,
+      "band": [
+        150,
+        600
+      ],
+      "step": 10,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.cinder_alpha": {
+      "value": 0.15,
+      "default": 0.15,
+      "band": [
+        0.05,
+        0.35
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.drowned_alpha": {
+      "value": 0.15,
+      "default": 0.15,
+      "band": [
+        0.05,
+        0.35
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.starved_alpha": {
+      "value": 0.15,
+      "default": 0.15,
+      "band": [
+        0.05,
+        0.35
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.throne_alpha": {
+      "value": 0.2,
+      "default": 0.2,
+      "band": [
+        0.05,
+        0.35
+      ],
+      "step": 0.05,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color.white": {
+      "value": "#FFFFFF",
+      "default": "#FFFFFF",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color.amber": {
+      "value": "#FFB347",
+      "default": "#FFB347",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color.crimson": {
+      "value": "#DC143C",
+      "default": "#DC143C",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.hp.color.deep_red": {
+      "value": "#8B0000",
+      "default": "#8B0000",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.tint.warrior": {
+      "value": "#8B0000",
+      "default": "#8B0000",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.tint.valkyrie": {
+      "value": "#1E3A8A",
+      "default": "#1E3A8A",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.tint.elf": {
+      "value": "#166534",
+      "default": "#166534",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.class.tint.wizard": {
+      "value": "#581C87",
+      "default": "#581C87",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.cinder_tint": {
+      "value": "#3D2817",
+      "default": "#3D2817",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.drowned_tint": {
+      "value": "#0D1F2D",
+      "default": "#0D1F2D",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.starved_tint": {
+      "value": "#1F2D0D",
+      "default": "#1F2D0D",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "juice.zone.throne_tint": {
+      "value": "#2D0D2D",
+      "default": "#2D0D2D",
+      "band": null,
+      "step": null,
+      "affects": [
+        "juice"
+      ]
+    },
+    "flame_jet_preon_ticks": {
+      "value": 9,
+      "default": 9,
+      "band": [
+        6,
+        12
+      ],
+      "step": 1,
+      "affects": [
+        "juice"
+      ]
+    }
+  }
+}
