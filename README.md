@@ -20,6 +20,13 @@ A single-player, top-down 2D arcade dungeon crawl in which your health bar is th
 
 ---
 
+## Watch it play
+
+<div align="center">
+<a href="https://sneferu.ai/assets/shots/game-demo.mp4"><img src="docs/screenshots/build-video.jpg" alt="Play the 3:27 recording of HUNGERHALL: a frame from floor 7, the warrior among enemies, food and doors" width="860"></a>
+<br><sub>Click to play the 3:27 recording of the finished build: class select, the dungeon floors, a game over, and at the end the design document the pipeline wrote for itself. It's also on <a href="https://sneferu.ai/#film">sneferu.ai</a>.</sub>
+</div>
+
 ## The game
 
 HP moves in one direction: **down**. Time is the opponent, and enemies are how the dungeon raises the price of time. Every room offers three priced routes:
@@ -78,6 +85,27 @@ The pipeline ran phases G1–G15 (G0 was skipped by the operator, and G16 live-o
 HUNGERHALL is the showcase run of **Sneferu's Game Pipeline** (master `gap-253b64a1`). The seed asked for a single-player take on the 1985 arcade dungeon crawler, in 2D, awesome and usable. It went through concept lock, the design document, voice and art bibles, the UX flow and the prototype spec, then a cooperative build in Godot (G7). A fun audit followed, then a polish-and-juice pass (G10), sound, localization, monetization, a Steam store kit and a launch kit. Each phase was argued out between independent models and gated by reviewers. Total model spend: $1,847.
 
 **Runtime link to Sneferu:** none. Sneferu's Game Pipeline built HUNGERHALL, and the game runs on its own in Godot.
+
+## Built by Sneferu
+
+HUNGERHALL came out of **[Sneferu Studio](https://sneferu.ai)** from a one-line request. These are the Studio screens that make games like it.
+
+<div align="center">
+<img src="docs/screenshots/sneferu-autopilot.webp" alt="Sneferu Studio's Autopilot console with the HUNGERHALL production gap-253b64a1 selected: complete, 17 of 17 phases, $1,847.02 spent against a $2,000 cap, and a truth panel naming the failed gates" width="860">
+<br><sub>The production in Sneferu Studio's Autopilot. It completed 17 of 17 phases for $1,847.02 of a $2,000 cap, and the gates it failed are listed on the page rather than hidden.</sub>
+</div>
+
+<div align="center">
+<img src="docs/screenshots/sneferu-run-history.webp" alt="Run history for the same production: each phase from G0 to G14 with its status, run id, gate decision and cost, plus view, restart and fork buttons" width="760">
+<br><sub>The same production, phase by phase: each stage's status, gate decision and cost, with a restart button on every row.</sub>
+</div>
+
+<div align="center">
+<img src="docs/screenshots/sneferu-asset-studio.webp" alt="Sneferu Studio's Asset Studio library: generated materials and meshes, each with its version history, qualification status and license reasoning, and the selected candidate with its vision score" width="860">
+<br><sub>The Asset Studio, where a game's artwork is generated and approved. Every texture and 3D model keeps its earlier versions, the reasoning that it is legal to use, and the votes that let it into the game.</sub>
+</div>
+
+<p align="center"><b><a href="https://sneferu.ai">See the whole studio at sneferu.ai →</a></b></p>
 
 <div align="center">
 
