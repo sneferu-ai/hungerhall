@@ -20,6 +20,8 @@ A single-player, top-down 2D arcade dungeon crawl in which your health bar is th
 
 ---
 
+**The specification:** [`docs/specification/`](docs/specification/) holds the specification Sneferu built this from, copied word for word from its run record.
+
 ## Watch it play
 
 <div align="center">
